@@ -1,0 +1,26 @@
+@function to-string($value) {
+  @return inspect($value);
+}
+
+@function capitalize($string) {
+  $string : to-string($string);
+  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function em($px,$context:16){
+  @return ($px / $context)*1em;
+}
+@function letterSpacing($photoshop-value,$font-size) {
+  @return #{($photoshop-value*$font-size)/1000}px;
+}
+@function mathDivide($value1,$value2) {
+  @return ($value1/$value2);
+}
+
+@function abs($number) {
+  @if $number >= 0 {
+    @return $number;
+  }
+
+  @return -1*$number;
+}

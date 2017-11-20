@@ -1,0 +1,29 @@
+// fonts
+@import "../../node_modules/font-awesome/scss/font-awesome";
+$fa-font-path: "../../node_modules/font-awesome/fonts" !default;
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// utilities 
+@import 'utilities/reset';
+@import 'utilities/variables';
+@import 'utilities/function'; 
+@import 'utilities/classes';
+@import 'utilities/grid';  
+@import 'utilities/mixins'; 
+
+
+// components 
+@import 'components/buttons'; 
+@import 'components/forms'; 
+
+// layout 
+@import 'layout/general'; 
+@import 'layout/header'; 
+@import 'layout/footer';
+@import 'layout/menu';
+
+/* Pages */
+@import 'layout/pages/accueil'; 
+
+// Override
+@import 'utilities/media-query'; 

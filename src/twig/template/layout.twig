@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- build:css -->
+ 	<link href="css/style.css" rel="stylesheet" type="text/css">
+ 	<!-- endbuild -->
+    <title>{{ title }}</title>
+</head>
+<body>
+	{% include "header.twig" %}
+    {% block page %}{% endblock %}
+    {% include "footer.twig" %}	
+
+
+    <!-- build:js -->
+    <!-- endbuild -->
+</body>
+</html>

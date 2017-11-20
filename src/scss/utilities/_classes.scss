@@ -1,0 +1,62 @@
+.is-shown{
+  display: block;
+}
+.is-hidden{
+  display: none;
+}
+.is-visible{
+  visibility: visible;
+  opacity:1;
+}
+.is-invisible{
+  visibility: hidden;
+  opacity:0;
+}
+.break-word{
+  display: block;
+}
+%pseudo-clear{
+  content:'';
+  width:0px;
+  height:0px;
+  clear:both;
+  display: block;
+}
+
+.img-responsive{
+  max-width : 100%;
+  heigth: auto;
+  display: block;
+}
+
+.clear{
+  width:0px;
+  height:0px;
+  clear:both;
+  display: block;
+}
+.clearfix{
+  &:before,
+  &:after{
+    content:'';
+    clear:both;
+    display: block;
+  }
+}
+.center-block{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.inner-left{
+  float:left !important;;
+}
+
+.inner-right{
+  float:right !important;
+}
+
+.hidden-lg{
+  display: none;
+}
