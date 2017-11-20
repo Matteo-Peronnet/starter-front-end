@@ -121,8 +121,6 @@ Exemple :
 
 > **ATTENTION ! Ne pas oublier le "_" dans devant son nom et de l'importer dans le fichier style.scss**
 
-Un fichier `"model-base.html"` est a disposition, il contient le code commun à toutes les pages, il est utile lorsque l'ont développe sur une nouvelle page de copier celui-ci et de le renommer afin d'avoir les parties communne de toutes les pages.
-**Maintenant à vos clavier, vous avez toutes les cartes en mains pour réaliser le site.**
 
 ## Moteur de Template TWIG
 
