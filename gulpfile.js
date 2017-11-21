@@ -82,7 +82,7 @@ function bundle_js(bundler) {
     .pipe(buffer())
     .pipe(gulp.dest(config.jsout))
     .pipe(rename('app.min.js'))
-    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(sourcemaps.init({ loadMaps: false }))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.jsout))
