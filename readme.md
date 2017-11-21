@@ -225,8 +225,7 @@ Browserify interprétera ces chargements/imports de modules pour construire le f
 
 Lorsque vous avez besoin d'un plugin externe à l'application, il est parfois éprouvant de devoir le l'installer, vérifier les versions, les compatibilitées etc ...
 
-Grâce au système de Module, par le simple ajout du plugin dans les dépendances du projet via la commande `n
-pm install NomDuPlugin`, vous pouvez directement l'importer dans le projet.
+Grâce au système de Module, par le simple ajout du plugin dans les dépendances du projet via la commande `npm install NomDuPlugin`, vous pouvez directement l'importer dans le projet.
 
 Dans le StarterPack, j'ai fais un éxemple en utilisant `Jquery`.
 
