@@ -214,4 +214,32 @@ Dans le fichier `template.twig` on va même pouvoir y inclure le `header` et le 
 5. Copier le dossier télécharger dans le dossier ouvert par Bracket
 6. Redémarrer Bracket
 
+## Babelify
+
+L’idée de Browserify est de permettre aux développeurs front d’organiser leur code comme il le ferait pour développer leur code Back-end via l’utilisation de la gestion de module Node.js.
+On aura donc un fichier JavaScript principal `src/js/app.js` dans lequel on importera les modules dont il dépend qui peuvent eux même dépendre d’autres modules etc.
+Browserify interprétera ces chargements/imports de modules pour construire le fichier final le tout en utilisant les nouveaux standards JavaScript (`ES2015/ES2015`).
+
+
+## Exemple
+
+Lorsque vous avez besoin d'un plugin externe à l'application, il est parfois éprouvant de devoir le l'installer, vérifier les versions, les compatibilitées etc ...
+
+Grâce au système de Module, par le simple ajout du plugin dans les dépendances du projet via la commande `n
+pm install NomDuPlugin`, vous pouvez directement l'importer dans le projet.
+
+Dans le StarterPack, j'ai fais un éxemple en utilisant `Jquery`.
+
+```sh
+$ npm install jquery
+```
+> J'ai au préalable éffectuer cette commande qui a permi d'installer le plugin `Jquery` dans le dossier `node_modules`. 
+
+```javascript
+# Fichier : src/js/app.js
+var $ = require('jquery');
+```
+> Grâce à l'ajout de cette ligne dans le fichier `src/js/app.js`, `Jquery` va être automatiquement charger dans le fichier. Nous pouvons maintenant installer n'importe qu'elle dépendance dans le projet, ainsi l'intégrer facilement avec la commande `require("NomDuPlugin")` à la suite du fichier.
+
+
 [Voir toutes les fonctionnalités de SASS]: <https://www.alsacreations.com/article/lire/1717-les-preprocesseurs-css-c-est-sensass.html>
