@@ -221,7 +221,7 @@ On aura donc un fichier JavaScript principal `src/js/app.js` dans lequel on impo
 Browserify interprétera ces chargements/imports de modules pour construire le fichier final le tout en utilisant les nouveaux standards JavaScript (`ES2015/ES2015`).
 
 
-## Exemple
+### Exemple
 
 Lorsque vous avez besoin d'un plugin externe à l'application, il est parfois éprouvant de devoir le l'installer, vérifier les versions, les compatibilitées etc ...
 
