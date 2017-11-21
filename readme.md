@@ -1,4 +1,4 @@
-# StarterFrontEnd GULP/SASS/TWIG
+# StarterFrontEnd GULP/SASS/TWIG/BABELIFY
 Voici les étapes à suivre pour procéder a l'installation et le développement du projet.
 ## Installation
 Voici les différents logiciels à installer pour faire fonctionner l'application.
